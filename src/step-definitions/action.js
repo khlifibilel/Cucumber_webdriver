@@ -8,7 +8,7 @@ When (/^Je clique sur le lien "(.*)"$/, async (lien) => {
     await $(lien).click()             
 });
 
-// action
+/// hello 
 
 
 When (/^Je clique sur le lien aide$/, async () => {       
