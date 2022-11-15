@@ -23,7 +23,9 @@ exports.config = {
     specs: [
         
        // './src/features/phrases_projet.feature'
-        './src/features/correction_linkedin.feature'
+        // './src/features/correction_linkedin.feature'
+        // './src/features/verifier_colis.feature'
+        './src/features/verifier_boutique.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -142,7 +144,8 @@ exports.config = {
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: ['./src/step-definitions/**.js'],
-        //require: ['./features/step-definitions/steps_tuto.js'],  => 
+     
+ 
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)

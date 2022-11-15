@@ -1,9 +1,20 @@
 // Fichier contients steps definiton 
 const { Given, When, Then } = require('@wdio/cucumber-framework');
  
+
+
+// Butoon submit de Linekdin
+When (/^Je clique sur le bouton "(.*)"$/, async (link) => {
+
+     await $("//button[contains(@type,'submit')]").click()
+  
+    
+    });
+    
+
+
+
 // méthode pour accéder sur le site de la poste
-
-
 When (/^Je clique sur le lien "(.*)"$/, async (lien) => {       
     await $(lien).click()             
 });
@@ -11,9 +22,6 @@ When (/^Je clique sur le lien "(.*)"$/, async (lien) => {
 // action
 
 
-When (/^Je clique sur le lien aide$/, async () => {       
-    await $("//i[contains(@class,'actions__icon ph-icon ph-icon--action-help ph-icon--light ph-icon--default')]").click()             
-});
 
 
 
@@ -50,8 +58,7 @@ await $('button[type="submit"]').click();
 
 
 
-//When Je saisis dans le champ mail "khlifi93@hotmail.fr" et le champ mdp "Bil1993@"
-
+//When Je saisis dans le champ mail "khlifi93@hotmail.fr" et le champ mdp "Bil1993@" dans linkedin
 
 When (/^Je saisis dans le champ mail "(.*)" et le champ mdp "(.*)"$/, async (username, password) => {       
     await $("//input[contains(@id,'username')]").setValue(username)   
@@ -61,11 +68,14 @@ When (/^Je saisis dans le champ mail "(.*)" et le champ mdp "(.*)"$/, async (use
        
 });
 
-When (/^Je clique sur le bouton "(.*)"$/, async (btn_cliquer) => {
-
-$(btn_cliquer).click()
-await browser.pause(4000)
-
-});
 
 
+
+
+
+
+
+
+
+
+   

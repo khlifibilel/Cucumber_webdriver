@@ -6,7 +6,6 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "module",
     "devDependencies": {
         "@wdio/cli": "^7.25.4",
         "@wdio/cucumber-framework": "^7.25.4",
@@ -17,6 +16,6 @@
         "wdio-wait-for": "^3.0.0"
     },
     "dependencies": {
-        "type": "^2.7.2"
+        
     }
 }
